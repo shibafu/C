@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+
+int main(int argc,char **argv)
+{
+  //ポインタッタ
+  char *input;
+  //FILE *fp;
+  int boolean;
+
+  printf("ぽいんっ立った\n");
+  boolean = fgets(*input,256,stdin);
+
+
+  printf("%s\n",input);
+
+}

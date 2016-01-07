@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+
+  FILE *fp;
+
+  if(fp = fopen("./file.txt",'a')) == NULL){
+  printf("ファイルオープンエラー\n");
+  }
+
+  return 0;
+}
