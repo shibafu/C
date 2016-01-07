@@ -1,0 +1,32 @@
+#include<stdio.h>
+ 
+int main(int argc, char *argv[])
+{
+int i,j;
+int temp;
+int array[10] =
+{ 3, 7, 1, 78, 32, 1243, 124, 422, 12597, 211};
+ 
+for(i=0;i<10;i++)
+{
+printf("%d\n",array[i]);
+}
+for(i=0;i<sizeof(array) / sizeof(array[0]);i++)
+{
+for(j=0;j<sizeof(array)/sizeof(array[0])-1;j++)
+{
+if(array[i]<array[i+1])
+{
+temp = array[j];
+array[j] = array[j+1];
+array[j] = temp;
+}
+}
+}
+for(i=0;i<10;i++)
+{
+printf("%d\n",array[i]);
+}
+ 
+return 0;
+}
