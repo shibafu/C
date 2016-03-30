@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+
+#define MEMORYBYTE 50
+
+void mallocKakuho(char *pointer, int Membyte);
+void mallocFree(char *pointer);
+void fflushKarayomi(char *pointer);
+
+
+
+
+
+
+//ヌル文字を含む文字列にのみ対応
+void fflushKarayomi(char *pointer){
+
+     if(pointer[strlen(pointer)-1] == '\n'){
+	  while(getchar() != '\n');
+     }
+}
+
+void mallocFree(char *pointer)
+{
+     free(pointer)
+}
+void mallocKakuho(char *pointer,int Membyte){
+
+     pointer = (char *)mallc(Membyte * sizeof(char)
+
+}
+
