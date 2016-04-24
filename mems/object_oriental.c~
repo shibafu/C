@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+/* 標準入出力オブジェクト
+
+ */
+struct typdef(
+	      void ( *)(malloc_one);
+
+/* プロトタイプ宣言 */
+
+//メモリの確保
+void malloc_one (void *mem_p);
+//数列の生成
+int* integ_array(int *int_array);
+//文字の入力
+void scanf_alter(char *input);
+
+
+/* メイン関数 */
+int main(int argc, char **argv){
+
+}
